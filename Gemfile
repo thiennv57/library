@@ -25,3 +25,8 @@ group :development do
   gem "web-console", "2.0.0.beta3"
   gem "spring", "1.1.3"
 end
+
+group :production do
+  gem "pg", "0.18.3"
+  gem "rails_12factor", "0.0.2"
+end
