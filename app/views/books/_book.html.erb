@@ -1,0 +1,15 @@
+<table class="table table-bordered">
+  <tr class="success">
+    <th>Mã sách</th>
+    <th>Tên sách</th>
+    <th>Mô tả</th>
+    <% @books.each do |book| %>
+      <tr>
+        <td><%= book.code %></td>
+        <td><%= link_to book.name, "/books/show/#{book.code}"%></td>
+        <td><%= book.description %></td>
+      </tr>
+    <% end %>
+  </tr>
+</table>
+
